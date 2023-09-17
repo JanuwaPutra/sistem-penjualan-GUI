@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.8
+Created-By: 18.0.2.1+1-1 (Oracle Corporation)
+Class-Path: lib/mysql-connector-java-5.1.39.jar lib/commons-beanutils-
+ 1.8.2.jar lib/commons-collections-3.2.1.jar lib/commons-digester-1.7.
+ jar lib/commons-logging-1.1.jar lib/groovy-all-1.7.5.jar lib/iText-2.
+ 1.7.jar lib/iTextAsian.jar lib/jasperreports-4.0.2.jar lib/jfreechart
+ -1.0.12.jar lib/jasperreports.jar lib/commons-collections-3.2.2.jar l
+ ib/commons-digester-2.1.jar lib/jackson-core-2.14.1.jar lib/jasperrep
+ orts-6.20.3.jar lib/jfreechart-1.0.19.jar lib/woodstox-core-6.4.0.jar
+  lib/commons-beanutils-1.8.2.jar lib/commons-collections-3.2.1.jar li
+ b/commons-digester-1.7.jar lib/commons-logging-1.1.jar lib/groovy-all
+ -1.7.5.jar lib/iText-2.1.7.jar lib/iTextAsian.jar lib/jasperreports-4
+ .0.2.jar lib/jfreechart-1.0.12.jar
+X-COMMENT: Main-Class will be added automatically by build
+Main-Class: View.MenuUtama
+

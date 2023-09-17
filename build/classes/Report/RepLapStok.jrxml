@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="588826d8-9fbd-4114-ab57-27aef8ffe428">
+	<property name="ireport.zoom" value="1.3310000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM BARANG_2011500390
+ORDER BY NMBRG]]>
+	</queryString>
+	<field name="KdBrg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NmBrg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HargaBrg" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="a9783d09-4fec-48d2-b5b1-3b25c31773d1"/>
+				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="eb8afb07-c6ad-4e04-83fd-463d3b24a2e7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[LAPORAN STOK BARANG]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="b5eb2521-c3b7-41cb-a324-06a760cb1113"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="53" y="19" width="111" height="15" uuid="fdeb6ebe-4686-479e-a10c-7dc9e94062d9"/>
+				<text><![CDATA[KdBrg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="164" y="19" width="111" height="15" uuid="6716c9a9-a8b9-4d54-a64d-3a8d1991dd5b"/>
+				<text><![CDATA[NmBrg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="275" y="19" width="111" height="15" uuid="86e25d49-1ab9-4b50-99e3-08908112798b"/>
+				<text><![CDATA[Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="386" y="19" width="111" height="15" uuid="b94cf373-dc55-4933-bf5b-9b4c4b6edbba"/>
+				<text><![CDATA[HargaBrg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="497" y="19" width="58" height="15" uuid="222e98d9-8577-48c8-9be2-7c5f12e9342a"/>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="6" y="19" width="43" height="15" uuid="f31d162e-4895-455d-9e1b-0d95717f425b"/>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="c9221e94-e79f-4259-845d-c16402be6f6a"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="53" y="0" width="111" height="15" uuid="fe213ca5-ba44-4132-a03b-d845159e4463"/>
+				<textFieldExpression><![CDATA[$F{KdBrg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="164" y="0" width="111" height="15" uuid="98074f29-3b11-4af0-90e1-dc14df8b7772"/>
+				<textFieldExpression><![CDATA[$F{NmBrg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="275" y="0" width="111" height="15" uuid="37ed815d-8ff7-4da3-a1bc-31e792be24c8"/>
+				<textFieldExpression><![CDATA[$F{Satuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="386" y="0" width="111" height="15" uuid="bfc8a3a7-76c1-4741-a09f-357b35ec3abd"/>
+				<textFieldExpression><![CDATA[$F{HargaBrg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="497" y="0" width="58" height="15" uuid="b14afd12-f2fa-4efb-9faf-de7deb19b833"/>
+				<textFieldExpression><![CDATA[$F{Stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="0" width="30" height="15" uuid="28a86bd7-af91-425f-8ef7-e07b0568b58e"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="fc8e1983-0363-41be-9607-1dae83cd14ea"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="d005f537-ee52-416b-a8c9-4b25f8762d9b"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="d2aae7ac-1efe-430b-8df3-84d87b634b7c"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="aba42c52-790b-4c1b-9891-518d08448bc7"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
